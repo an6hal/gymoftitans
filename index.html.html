@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Gym Of Titans | Fitness</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#">
+              <img src="assets/logo-white.png" alt="logo" class="logo-white" />
+              <img src="assets/logo-dark.png" alt="logo" class="logo-dark" />
+            </a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#class">Classes</a></li>
+          
+          <li><a href="#registration">Registration</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#">Join Now</a></li>
+        </ul>
+        
+      </nav>
+      <div class="section__container header__container" id="home">
+        <div class="header__content">
+          <h1>KEEP GOING UNTIL YOU WIN!</h1>
+          <h2>ACHIEVE FITNESS, EMBRACE JOY!</h2>
+          <p>
+            Discover your true strength with our professional coaching and cutting-edge facilities. Each move you make leads to a stronger, healthier, and happier version of yourself. Transform fitness into your way of life today!
+          </p>
+          <div class="header__btn">
+            <button class="btn">Explore More</button>
+          </div>
+        </div>
+        <div class="header__image">
+          <img src="assets/header.png" alt="header" />
+        </div>
+      </div>
+    </header>
+
+    <div class="about" id="about">
+      <div class="section__container about__container">
+        <div class="about__image">
+          <img src="assets/about.png" alt="about" />
+        </div>
+        <div class="about__content">
+          <h2 class="section__header">Are You Ready to Transform Your Life?</h2>
+          <p>
+            Starting your journey to a healthier, stronger you may seem like the hardest part, but it's also the most rewarding. Whether you're just beginning or you're a seasoned pro, our tailored training programs are crafted to help you achieve your goals with speed and precision.
+          </p>
+          <p>
+            With our inspiring trainers, dynamic classes, and cutting-edge equipment, you'll have all the tools you need to stay dedicated and achieve remarkable results.
+          </p>
+          <div class="about__btn">
+            <button class="btn">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="service" id="service">
+      <div class="section__container service__container">
+        <h2 class="section__header">Services We Provide</h2>
+        <div class="service__grid">
+          <div class="service__card">
+            <span>01</span>
+            <h4>Fitness Training</h4>
+            <p>
+              Our fitness programs are customized to help you build strength, boost endurance, and accomplish your unique fitness goals.
+            </p>
+          </div>
+          <div class="service__card">
+            <span>02</span>
+            <h4>Yoga</h4>
+            <p>
+              Ideal for all fitness levels, our sessions aim to enhance flexibility, balance, and mental clarity while effectively reducing stress.
+            </p>
+          </div>
+          <div class="service__card">
+            <span>03</span>
+            <h4>Gymnastics</h4>
+            <p>
+              Our gymnastics classes offer a fun and challenging way to improve coordination, flexibility, and core strength through engaging exercises.
+            </p>
+          </div>
+          <div class="service__card">
+            <span>04</span>
+            <h4>Karate</h4>
+            <p>
+              Our martial arts program is suitable for all ages and skill levels, focusing on technique, respect, personal growth, and building confidence.
+            </p>
+          </div>
+          <div class="service__image">
+            <img src="assets/service.png" alt="service" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Registration Section -->
+  <section id="registration" class="registration-section">
+  <div class="registration-container">
+    <h2>Register</h2>
+    <form id="registrationForm">
+      <!-- NIC -->
+      <div class="form-group">
+        <label for="nic">NIC:</label>
+        <input type="text" id="nic" name="nic" required />
+      </div>
+      
+      <!-- Sex -->
+      <div class="form-group">
+        <label>Sex:</label>
+        <label><input type="radio" name="sex" value="Male" required /> Male</label>
+        <label><input type="radio" name="sex" value="Female" /> Female</label>
+      </div>
+
+      <!-- First Name, Surname -->
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required />
+      </div>
+      <div class="form-group">
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required />
+      </div>
+
+      <!-- Phone -->
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" maxlength="7" required />
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <!-- Preferences -->
+      <div class="form-group">
+        <label>Preferences:</label>
+        <label><input type="checkbox" name="preferences" value="News" /> News</label>
+        <label><input type="checkbox" name="preferences" value="Updates" /> Updates</label>
+      </div>
+
+      <!-- Gym -->
+      <div class="form-group">
+        <label for="gym">Gym:</label>
+        <select id="gym" name="gym" required>
+          <option value="">Select your gym</option>
+          <option value="Port-Louis">Port-Louis</option>
+          <option value="Bagatelle">Bagatelle</option>
+          <option value="Pereybere">Perebere</option>
+        </select>
+      </div>
+
+      <!-- Username -->
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required />
+      </div>
+
+      <!-- Buttons -->
+      <div class="form-buttons">
+        <button type="submit">Register</button>
+        <button type="reset" id="resetBtn">Reset</button>
+      </div>
+    </form>
+  </section>
+</section>
+<!-- Quiz Section -->
+<section id="quiz" class="quiz-section">
+  <div class="quiz-container">
+    <h1>Test Your Gym Knowledge!</h1>
+    <div id="quiz-questions">
+      <!-- Questions will appear here dynamically -->
+    </div>
+    <button id="submit-btn">Submit Quiz</button>
+    <div id="score"></div>
+  </div>
+</section>
+
+    <section class="popular" id="class">
+      <div class="section__container popular__container">
+        <h2 class="section__header">What would you like to be part of today?</h2>
+        <div class="popular__grid">
+          <div class="popular__card">
+            <div>
+              <h4>Cardio Strength</h4>
+              <p>Total-body workout with cardiovascular exercise</p>
+            </div>
+            <span>
+              <i class="ri-arrow-right-fill"></i>
+            </span>
+          </div>
+          <div class="popular__card">
+            <div>
+              <h4>Weight Training</h4>
+              <p>Increase muscle size and strength</p>
+            </div>
+            <span>
+              <i class="ri-arrow-right-fill"></i>
+            </span>
+          </div>
+          <div class="popular__card">
+            <div>
+              <h4>Yoga for Flexibility</h4>
+              <p>Work on flexibility and relax the body</p>
+            </div>
+            <span>
+              <i class="ri-arrow-right-fill"></i>
+            </span>
+          </div>
+          <div class="popular__card">
+            <div>
+              <h4>HIIT</h4>
+              <p>High-intensity interval training (HIIT)</p>
+            </div>
+            <span>
+              <i class="ri-arrow-right-fill"></i>
+            </span>
+          </div>
+          <div class="popular__card">
+            <div>
+              <h4>Personal Training</h4>
+              <p>Personalized fitness programs</p>
+            </div>
+            <span>
+              <i class="ri-arrow-right-fill"></i>
+            </span>
+          </div>
+          <div class="popular__card">
+            <div>
+              <h4>Fitness group sessions</h4>
+              <p>Keep your energy up and enjoy yourself</p>
+            </div>
+            <span>
+              <i class="ri-arrow-right-fill"></i>
+            </span>
+          </div>
+          <div class="popular__card">
+            <div>
+              <h4>Boxing technique classes</h4>
+              <p>Increase speed and stamina</p>
+            </div>
+            <span>
+              <i class="ri-arrow-right-fill"></i>
+            </span>
+          </div>
+          <div class="popular__card">
+            <div>
+              <h4>Pilates core training</h4>
+              <p>Build core strength</p>
+            </div>
+            <span>
+              <i class="ri-arrow-right-fill"></i>
+            </span>
+          </div>
+          <div class="popular__card">
+            <div>
+              <h4>Indoor cycling class</h4>
+              <p>Cardio cycling sessions</p>
+            </div>
+            <span>
+              <i class="ri-arrow-right-fill"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="facility__container">
+      <div class="facility__image">
+        <img src="assets/facility.jpg" alt="facility" />
+      </div>
+      <div class="facility__content">
+        <h2 class="section__header">It's about the best version of yourself</h2>
+        <p>
+          At our gym, we believe fitness goes beyond the body—it's about shifting your mindset, challenging your limits, and unlocking your true potential. Each workout brings you closer to becoming the strongest, healthiest, and most empowered version of yourself.
+        </p>
+        <p>
+          It's not about shortcuts or fleeting results; it's about embracing a lifestyle that fuels your dedication to growth. With the right mindset and support, you can conquer challenges, push past limits, and accomplish goals you once thought unattainable.
+        </p>
+        <p>
+          The person you become is in your hands, and we believe in your potential. With the right training, commitment, and focus, you have the power to transform your goals into achievements.
+        </p>
+      </div>
+    </section>
+
+    <section class="section__container mentor__container">
+      <h2 class="section__header">Being supported by your own coach and mentor</h2>
+      <div class="mentor__grid">
+        <div class="mentor__card">
+          <img src="assets/mentor-1.jpg" alt="mentor" />
+          <h4>LALLMAHAMOOD MOHAMMAD HAASHIM IBRAHIM</h4>
+          <p>Bodybuilder Coach</p>
+        </div>
+        <div class="mentor__card">
+          <img src="assets/mentor-2.jpg" alt="mentor" />
+          <h4>Madelyn Cline</h4>
+          <p>Cardio Coach</p>
+        </div>
+        <div class="mentor__card">
+          <img src="assets/mentor-3.jpg" alt="mentor" />
+          <h4>Scarlett Johansson</h4>
+          <p>Fitness Coach</p>
+        </div>
+      </div>
+    </section>
+
+    
+<!-- Customer Feedback Section -->
+<section id="customer-feedback" class="feedback-section">
+  <h2>What Our Customers Say</h2>
+
+  <!-- Feedback Display -->
+  <div class="feedback-display">
+    <div class="feedback-item">
+      <p class="feedback-text">"This gym has completely transformed my life! Amazing equipment and trainers!"</p>
+      <p class="feedback-name">- Jyestha RAMKALAWON</p>
+      <p class="feedback-rating">⭐⭐⭐⭐⭐</p>
+    </div>
+    <div class="feedback-item">
+      <p class="feedback-text">"I’ve been to many gyms, but this one stands out for its professionalism and friendly staff."</p>
+      <p class="feedback-name">- Anchal Gheesha RAMDHONEE</p>
+      <p class="feedback-rating">⭐⭐⭐⭐⭐</p>
+    </div>
+    <div class="feedback-item">
+      <p class="feedback-text">"Coach Haashim is amazing! He knows exactly how to customize a program that suits your goals and fitness level. I’ve gained so much confidence and strength under his guidance. Highly recommended!"</p>
+      <p class="feedback-name">- Megan Fox</p>
+      <p class="feedback-rating">⭐⭐⭐⭐⭐</p>
+    </div>
+  </div>
+
+  <!-- Feedback Form -->
+  <div class="feedback-form-container">
+    <h3>We value your feedback!</h3>
+    <form id="feedback-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="rating">Rate Us:</label>
+      <div class="stars" id="star-rating">
+        <span data-value="1">&#9733;</span>
+        <span data-value="2">&#9733;</span>
+        <span data-value="3">&#9733;</span>
+        <span data-value="4">&#9733;</span>
+        <span data-value="5">&#9733;</span>
+      </div>
+      <input type="hidden" id="rating" name="rating" value="0">
+
+      <label for="comments">Your Feedback:</label>
+      <textarea id="comments" name="comments" placeholder="Share your thoughts" rows="4" required></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+</section>
+
+<section class="footer">
+  <div class="container">
+    <div class="row">
+      <!-- Footer Column 1 (Logo and Contact Info) -->
+      <div class="col-md-4 mb-4">
+        <a href="#" class="footer__logo">
+          <img src="assets/logo-white.png" alt="logo" class="img-fluid" />
+        </a>
+        <ul class="footer__links list-unstyled">
+          <li>
+            <a href="#">
+              <span><i class="ri-phone-line"></i></span> +23058346239
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="ri-map-pin-line"></i></span> Mauritius
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="ri-mail-line"></i></span> info@gymoftitans
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Footer Column 2 (Gym Hours) -->
+      <div class="col-md-4 mb-4">
+        <h4 class="text-white">Gym Hours</h4>
+        <ul class="footer__links list-unstyled">
+          <li>Monday 5am - 10pm</li>
+          <li>Tuesday 5am - 10pm</li>
+          <li>Wednesday 5am - 10pm</li>
+          <li>Thursday 5am - 10pm</li>
+          <li>Friday 5am - 10pm</li>
+          <li>Saturday 5am - 10pm</li>
+          <li>Sunday 5am - 1pm</li>
+        </ul>
+      </div>
+
+      <!-- Footer Column 3 (Follow Us + Social Media Links) -->
+      <div class="col-md-4 mb-4 text-center">
+        <h4 class="text-white mb-3">Follow Us</h4> <!-- Positioned Follow Us here -->
+        <div class="social-icons d-flex justify-content-center">
+          <a href="https://wa.me/your-phone-number" target="_blank" class="social-icon whatsapp mx-2" style="font-size: 2rem; color: white;">
+            <i class="ri-whatsapp-line"></i>
+          </a>
+          <a href="https://www.instagram.com/your-profile" target="_blank" class="social-icon instagram mx-2" style="font-size: 2rem; color: white;">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="https://www.facebook.com/your-profile" target="_blank" class="social-icon facebook mx-2" style="font-size: 2rem; color: white;">
+            <i class="ri-facebook-line"></i>
+          </a>
+          <a href="https://www.tiktok.com/@your-profile" target="_blank" class="social-icon tiktok mx-2" style="font-size: 2rem; color: white;">
+            <i class="ri-tiktok-line"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom Bar -->
+  <div class="footer__bar text-center py-3">
+    Copyright © 2024 Gym Of Titans. All rights reserved.
+  </div>
+</section>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+    
+  </body>
+</html>
